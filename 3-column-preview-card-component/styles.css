@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Big Shoulders", sans-serif;
+}
+
+.main-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1000px;
+  height: 500px;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  padding: 4rem;
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+  padding: 4rem;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  padding: 4rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-top: 20px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+h1 {
+  font-family: "Big Shoulders", sans-serif;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  margin-top: 20px;
+}
+
+button {
+  padding: 1rem;
+  margin-top: 100px;
+  border-radius: 2rem;
+  width: 8rem;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.sedans button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  margin-top: 100px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  .main-card {
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .sedans {
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .sedans,
+  .suv,
+  .luxury {
+    width: 100%;
+    padding: 2.5rem;
+  }
+
+  button {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 180px;
+  }
+}
